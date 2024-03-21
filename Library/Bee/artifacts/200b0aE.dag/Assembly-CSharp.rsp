@@ -371,6 +371,7 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Healthbar.cs"
 "Assets/Scripts/InputManager.cs"
+"Assets/Scripts/SceneManager.cs"
 "Assets/Scripts/UIManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

@@ -96,6 +96,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
     <Compile Include="Assets/Art/unity-chan!/Unity-chan! Model/Scripts/RandomWind.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
+    <Compile Include="Assets/Scripts/SceneManager.cs" />
     <Compile Include="Assets/Art/unity-chan!/Unity-chan! Model/Scripts/IKCtrlRightHand.cs" />
     <Compile Include="Assets/Art/unity-chan!/Unity-chan! Model/Scripts/IdleChanger.cs" />
     <Compile Include="Assets/Scripts/CameraBehavior.cs" />
