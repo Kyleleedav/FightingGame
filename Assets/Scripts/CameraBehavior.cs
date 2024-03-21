@@ -63,13 +63,19 @@ public class CameraBehavior : MonoBehaviour
         if (distance < cameraClosestDistanceFromPlayers)
         {
             distance = cameraClosestDistanceFromPlayers;
+            //Set the Orthographic Camera to its smallest size.
+            gameObject.GetComponent<Camera>().orthographicSize = 1.3f;
         }
 
         if (distance >= camerafurthestDistanceFromPlayers)
         {
             distance = camerafurthestDistanceFromPlayers;
+            //Set the Orthographic Camera to its largest size.
+            gameObject.GetComponent<Camera>().orthographicSize = 1.5f;
         }
 
         transform.position = new Vector3(xMiddle, cameraFocalPoint.transform.position.y + yOffset, -distance);
+
+
     }
 }
