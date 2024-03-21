@@ -25,6 +25,7 @@ public class CharacterMovement : MonoBehaviour
     }
     public stances[] currentStance;
 
+    public GameObject pushbox;
     public GameObject rightPunchHitbox;
     public GameObject leftPunchHitbox;
     public GameObject rightKickHitbox;
@@ -71,7 +72,7 @@ public class CharacterMovement : MonoBehaviour
         if (playerNumber == 1)
         {
             Debug.Log("This is player 1");
-            opponents = GameObject.FindGameObjectsWithTag("Player2");
+            //opponents = GameObject.FindGameObjectsWithTag("Player2");
             Debug.Log("Found Player 2");
         }
 
@@ -105,7 +106,6 @@ public class CharacterMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            if (currentAirMobilityValue > 0)
             {
                 CharacterJumps();
             }

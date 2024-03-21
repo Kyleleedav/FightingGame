@@ -16,9 +16,22 @@ MonoBehaviour:
   mSprites:
   - name: Player1HealthBar_Albedo-(Delete)
     x: 0
-    y: 453
-    width: 911
-    height: 59
+    y: 685
+    width: 779
+    height: 63
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TopUI_Albedo-(Delete)
+    x: 0
+    y: 749
+    width: 2048
+    height: 275
     borderLeft: 0
     borderRight: 0
     borderTop: 0
