@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
+    //public bool wasPressedThisFrame
     public GameObject UIManager;
     public GameObject roundTimerText;
     public GameObject HealthBarBackgroundplayer1;
@@ -16,37 +17,21 @@ public class GameManager : MonoBehaviour
     public float healthPointsPlayer2;
     public float lastTimeUpdate = 0;
 
+
+
     private bool roundStillActive;
 
     //Unity controller plugin.
     private PlayerControls controls;
 
-    void Awake()
-    {
-        controls = new PlayerControls();
-
-        controls.Gameplay.LightPunch.performed += ctx => DisplayInput();
-        controls.Gameplay.LightKick.performed += ctx => DisplayInput();
-        controls.Gameplay.MediumPunch.performed += ctx => DisplayInput();
-        controls.Gameplay.MediumKick.performed += ctx => DisplayInput();
-    }
-
-    //Method for input display testing.
-    void DisplayInput()
-    {
-        UIManager.GetComponent<UIManager>().DisplayInputs();
-    }
-
-    private void OnEnable()
-    {
-        controls.Gameplay.Enable();
-    }
-
-    private void OnDisable()
-    {
-        controls.Gameplay.Disable();
-    }
-
+    public bool squareButtonPressed;
+    public bool crossButtonPressed;
+    public bool circleButtonPressed;
+    public bool triangleButtonPressed;
+    public bool rightShoulderButtonPressed;
+    public bool rightTriggerButtonPressed;
+    public bool leftShoulderButtonPressed;
+    public bool leftTriggerButtonPressed;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +46,32 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Player button inputs
+        squareButtonPressed = Keyboard.current.qKey.wasPressedThisFrame;
+        UIManager.GetComponent<UIManager>().CheckLightPunchButtonPressed();
+
+        crossButtonPressed = Keyboard.current.aKey.wasPressedThisFrame;
+        UIManager.GetComponent<UIManager>().CheckLightKickButtonPressed();
+
+        triangleButtonPressed = Keyboard.current.wKey.wasPressedThisFrame;
+        UIManager.GetComponent<UIManager>().CheckMediumPunchButtonPressed();
+
+        circleButtonPressed = Keyboard.current.sKey.wasPressedThisFrame;
+        UIManager.GetComponent<UIManager>().CheckMediumKickButtonPressed();
+
+        rightShoulderButtonPressed = Keyboard.current.eKey.wasPressedThisFrame;
+        UIManager.GetComponent<UIManager>().CheckHeavyPunchButtonPressed();
+
+        rightTriggerButtonPressed = Keyboard.current.dKey.wasPressedThisFrame;
+        UIManager.GetComponent<UIManager>().CheckHeavyKickButtonPressed();
+
+        leftShoulderButtonPressed = Keyboard.current.rKey.wasPressedThisFrame;
+        UIManager.GetComponent<UIManager>().CheckTagButtonOnePressed();
+
+        leftTriggerButtonPressed = Keyboard.current.fKey.wasPressedThisFrame;
+        UIManager.GetComponent<UIManager>().CheckTagButtonTwoPressed();
+        //
+
         if (timeRounded > 0 && Time.time - lastTimeUpdate > 1)
         {
             timeRounded -= 1;

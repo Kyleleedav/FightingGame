@@ -960,6 +960,11 @@ MonoBehaviour:
   levelCamera: {fileID: 577748194}
   cameraFocalPoint: {fileID: 1854694884}
   yOffset: 0.35
+--- !u!1 &589449942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5622629612383889894, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &590361495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1555,6 +1560,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5533631998405882436, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: m_Name
+      value: MKDisplayerButton - (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 5622629612383889752, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1600,23 +1609,89 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 695122830}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: TagButtonOneIcon
+      value: 
+      objectReference: {fileID: 685530745}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: TagButtonTwoIcon
+      value: 
+      objectReference: {fileID: 685530744}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: TagButtonThreeIcon
+      value: 
+      objectReference: {fileID: 685530743}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: HeavyKickButtonIcon
+      value: 
+      objectReference: {fileID: 685530747}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: LightKickButtonIcon
+      value: 
+      objectReference: {fileID: 685530742}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: HeavyPunchButtonIcon
+      value: 
+      objectReference: {fileID: 685530749}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: MediumKickButtonIcon
+      value: 
+      objectReference: {fileID: 685530746}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: MediumPunchButtonIcon
+      value: 
+      objectReference: {fileID: 685530748}
     - target: {fileID: 5622629612383889894, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
       propertyPath: m_Name
       value: UI Root (3D)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6121932438746745299, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: m_Name
+      value: MPDisplayerButton - (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
 --- !u!1 &685530742 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5622629613338336565, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9033206177449018912, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
   m_PrefabInstance: {fileID: 685530741}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &685530743 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8987867633781081779, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4251650043148388160, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7924030552739019537, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 976799492737898920, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5533631998405882436, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 705809367143635925, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6121932438746745299, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5021189941483034996, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
   m_PrefabInstance: {fileID: 685530741}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &695122830
@@ -1670,21 +1745,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe5b2acbe63647539b0be4eb3006d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIManager: {fileID: 704695790}
-  roundTimerText: {fileID: 685530742}
+  UIManager: {fileID: 589449942}
+  roundTimerText: {fileID: 973936209}
   HealthBarBackgroundplayer1: {fileID: 0}
-  HealthBarForegroundplayer1: {fileID: 685530743}
+  HealthBarForegroundplayer1: {fileID: 0}
   HealthBarplayer2: {fileID: 0}
   timeRounded: 5
   healthComparisonBar: 0.5
   healthPointsPlayer1: 100
   healthPointsPlayer2: 100
   lastTimeUpdate: 0
---- !u!1 &704695790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5622629612383889894, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
-  m_PrefabInstance: {fileID: 685530741}
-  m_PrefabAsset: {fileID: 0}
+  squareButtonPressed: 0
+  crossButtonPressed: 0
+  circleButtonPressed: 0
+  triangleButtonPressed: 0
+  rightShoulderButtonPressed: 0
+  rightTriggerButtonPressed: 0
+  leftShoulderButtonPressed: 0
+  leftTriggerButtonPressed: 0
 --- !u!1 &746327252
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,6 +2529,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400326, guid: 8f0565f23a2b58541a475bd3c1393052, type: 3}
   m_PrefabInstance: {fileID: 956747752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &973936209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5622629613338336565, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1065634162
 GameObject:

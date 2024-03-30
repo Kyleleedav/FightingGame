@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5533631998405882436, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: m_Name
+      value: MKDisplayerButton - (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 5622629612383889752, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -174,9 +178,85 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: TagButtonOneIcon
+      value: 
+      objectReference: {fileID: 685530745}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: TagButtonTwoIcon
+      value: 
+      objectReference: {fileID: 685530744}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: TagButtonThreeIcon
+      value: 
+      objectReference: {fileID: 685530743}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: HeavyKickButtonIcon
+      value: 
+      objectReference: {fileID: 685530747}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: LightKickButtonIcon
+      value: 
+      objectReference: {fileID: 685530742}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: HeavyPunchButtonIcon
+      value: 
+      objectReference: {fileID: 685530749}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: MediumKickButtonIcon
+      value: 
+      objectReference: {fileID: 685530746}
+    - target: {fileID: 5622629612383889819, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: MediumPunchButtonIcon
+      value: 
+      objectReference: {fileID: 685530748}
     - target: {fileID: 5622629612383889894, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
       propertyPath: m_Name
       value: UI Root (3D)
       objectReference: {fileID: 0}
+    - target: {fileID: 6121932438746745299, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: m_Name
+      value: MPDisplayerButton - (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+--- !u!1 &685530742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9033206177449018912, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4251650043148388160, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7924030552739019537, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 976799492737898920, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5533631998405882436, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 705809367143635925, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6121932438746745299, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &685530749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5021189941483034996, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
