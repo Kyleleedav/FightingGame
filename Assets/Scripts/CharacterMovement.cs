@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -44,18 +45,12 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 moveDirection;
     private CharacterController controller;
 
-
     [Range(1, 10)]
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2.5f;
     public float jumpVelocity = 30f;
 
     Rigidbody rb;
-
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody> ();
-    }
 
     // Start is called before the first frame update
     void Start()

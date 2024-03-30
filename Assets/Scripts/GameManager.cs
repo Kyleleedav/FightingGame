@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject UIManager;
     public GameObject roundTimerText;
     public GameObject HealthBarBackgroundplayer1;
     public GameObject HealthBarForegroundplayer1;
@@ -15,6 +17,36 @@ public class GameManager : MonoBehaviour
     public float lastTimeUpdate = 0;
 
     private bool roundStillActive;
+
+    //Unity controller plugin.
+    private PlayerControls controls;
+
+    void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.LightPunch.performed += ctx => DisplayInput();
+        controls.Gameplay.LightKick.performed += ctx => DisplayInput();
+        controls.Gameplay.MediumPunch.performed += ctx => DisplayInput();
+        controls.Gameplay.MediumKick.performed += ctx => DisplayInput();
+    }
+
+    //Method for input display testing.
+    void DisplayInput()
+    {
+        UIManager.GetComponent<UIManager>().DisplayInputs();
+    }
+
+    private void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    private void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
+
 
     // Start is called before the first frame update
     void Start()

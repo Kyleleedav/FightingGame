@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    //Icons for InputDisplayer.
+    public GameObject LightPunchButtonIcon;
+
     public GameObject timerText;
     public GameObject HealthBarplayer1;
     public GameObject HealthBarplayer2;
@@ -52,4 +55,11 @@ public class UIManager : MonoBehaviour
         }
         yield return new WaitForSeconds(1);
     }
+
+
+    public void DisplayInputs()
+    {
+        LightPunchButtonIcon.SetActive(true);
+    }
 }
+
