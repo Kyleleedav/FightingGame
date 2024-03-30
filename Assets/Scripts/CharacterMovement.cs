@@ -91,22 +91,15 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         //Inputs
-        float x = Input.GetAxisRaw("Horizontal") * movementSpeed;
+        //float x = Input.GetAxisRaw("Horizontal") * movementSpeed;
 
         //Moving
-        Vector3 movPos = transform.right * x;
-        Vector3 newMovePos = new Vector3(movPos.x, rb.velocity.y, movPos.z * 0f);
+        //Vector3 movPos = transform.right * x;
+        //Vector3 newMovePos = new Vector3(movPos.x, rb.velocity.y, movPos.z * 0f);
 
-        rb.velocity = newMovePos;
+        //rb.velocity = newMovePos;
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            {
-                CharacterJumps();
-            }
-        }
-
-        if (rb.velocity.y < 0)
+        /*if (rb.velocity.y < 0)
         {
             rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
@@ -114,7 +107,7 @@ public class CharacterMovement : MonoBehaviour
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             rb.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-        }
+        }*/
 
         /*
         moveDirection = new Vector3(Input.GetAxis("Horizontal") * movementSpeed, 0f, Input.GetAxis("Vertical") * 0);
@@ -133,7 +126,7 @@ public class CharacterMovement : MonoBehaviour
         Below are the attack listsThis is the case for counter hits....Needs more work!!!
         -------------------------------------------------------------------
         */
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.O))
         {
             LaunchAttack(attackMove[0]);
 
@@ -144,7 +137,7 @@ public class CharacterMovement : MonoBehaviour
             StartCoroutine(EnableHurtbox());
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             LaunchAttack(attackMove[1]);
             currentMoveStrength = attackMove[1].GetComponent<AttackMoveScript>().moveDamage;
@@ -154,19 +147,19 @@ public class CharacterMovement : MonoBehaviour
             StartCoroutine(EnableHurtbox());
         }
 
-        if (Input.GetKeyDown(KeyCode.A) && Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.K) && Input.GetKeyDown(KeyCode.Q))
         {
             Debug.Log("Heavy/Left + Right Punch");
             StartCoroutine(EnableHurtbox());
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             Debug.Log("Right Kick");
             StartCoroutine(EnableHurtbox());
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             Debug.Log("Left Kick");
             StartCoroutine(EnableHurtbox());
@@ -236,16 +229,5 @@ public class CharacterMovement : MonoBehaviour
         //This needs a permanent fix.
         rightPunchHitbox.SetActive(false);
         leftPunchHitbox.SetActive(false);
-    }
-
-    void CharacterJumps()
-    {
-        if (currentAirMobilityValue > 0)
-        {
-            GetComponent<Rigidbody>().velocity = Vector3.up * jumpVelocity;
-            currentStance[0].standing = false;
-            currentStance[0].airborne = true; /*Need to find a better soltion for this. Not comfortable using ..[0]..*/
-            currentAirMobilityValue--;
-        }
     }
 }

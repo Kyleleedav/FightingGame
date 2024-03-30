@@ -110,7 +110,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""d61228ec-7385-4f93-a6d7-5740954ee33b"",
-                    ""path"": ""<DualShockGamepad>/dpad/up"",
+                    ""path"": ""<Gamepad>/dpad/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

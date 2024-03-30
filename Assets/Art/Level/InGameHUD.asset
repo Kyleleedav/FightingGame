@@ -15,20 +15,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: fa74168750b534adfa0370d1a3cf798e, type: 2}
   mSprites:
   - name: ButtonHeavyKickDefault
-    x: 1494
-    y: 657
-    width: 44
-    height: 44
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: ButtonHeavyKickPressed
-    x: 1539
+    x: 1679
     y: 702
     width: 44
     height: 44
@@ -40,8 +27,21 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: ButtonHeavyKickPressed
+    x: 1679
+    y: 657
+    width: 44
+    height: 44
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: ButtonHeavyPunchDefault
-    x: 1629
+    x: 1949
     y: 657
     width: 44
     height: 44
@@ -54,8 +54,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ButtonHeavyPunchPressed
-    x: 1539
-    y: 657
+    x: 1634
+    y: 702
     width: 44
     height: 44
     borderLeft: 0
@@ -67,98 +67,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ButtonLightKickDefault
-    x: 1854
-    y: 702
-    width: 44
-    height: 44
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: ButtonLightKickPressed
-    x: 1494
-    y: 702
-    width: 44
-    height: 44
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: ButtonLightPunchDefault
-    x: 1764
-    y: 702
-    width: 44
-    height: 44
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: ButtonLightPunchPressed
-    x: 1584
-    y: 702
-    width: 44
-    height: 44
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: ButtonMediumKickDefault
-    x: 1944
-    y: 702
-    width: 44
-    height: 44
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: ButtonMediumKickPressed
-    x: 1719
-    y: 702
-    width: 44
-    height: 44
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: ButtonMediumPunchDefault
-    x: 1674
-    y: 702
-    width: 44
-    height: 44
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: ButtonMediumPunchPressed
-    x: 1449
+    x: 1904
     y: 657
     width: 44
     height: 44
@@ -170,8 +79,99 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: ButtonLightKickPressed
+    x: 1859
+    y: 657
+    width: 44
+    height: 44
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonLightPunchDefault
+    x: 1814
+    y: 657
+    width: 44
+    height: 44
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonLightPunchPressed
+    x: 1769
+    y: 657
+    width: 44
+    height: 44
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonMediumKickDefault
+    x: 1724
+    y: 657
+    width: 44
+    height: 44
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonMediumKickPressed
+    x: 1994
+    y: 657
+    width: 44
+    height: 44
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonMediumPunchDefault
+    x: 1634
+    y: 657
+    width: 44
+    height: 44
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonMediumPunchPressed
+    x: 1994
+    y: 702
+    width: 44
+    height: 44
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: ButtonTagAssist1Default
-    x: 1629
+    x: 1949
     y: 702
     width: 44
     height: 44
@@ -184,7 +184,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ButtonTagAssist1Pressed
-    x: 1449
+    x: 1904
     y: 702
     width: 44
     height: 44
@@ -197,7 +197,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ButtonTagAssist2Default
-    x: 1809
+    x: 1859
     y: 702
     width: 44
     height: 44
@@ -210,7 +210,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ButtonTagAssist2Pressed
-    x: 1989
+    x: 1814
     y: 702
     width: 44
     height: 44
@@ -223,7 +223,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ButtonTagAssist3Default
-    x: 1899
+    x: 1769
     y: 702
     width: 44
     height: 44
@@ -236,10 +236,23 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ButtonTagAssist3Pressed
-    x: 1584
-    y: 657
+    x: 1724
+    y: 702
     width: 44
     height: 44
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DirectionalInputDisplay
+    x: 1449
+    y: 562
+    width: 184
+    height: 184
     borderLeft: 0
     borderRight: 0
     borderTop: 0

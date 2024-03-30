@@ -234,6 +234,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDamage: 0
+--- !u!1 &81464362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4855731379714172989, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &116378293
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +443,7 @@ GameObject:
   - component: {fileID: 148615532}
   - component: {fileID: 148615534}
   - component: {fileID: 148615529}
+  - component: {fileID: 148615535}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -551,6 +557,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &148615535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148615527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeaf72dc4a75b47f08ab63a2929fa2ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 695122830}
+  playerSpeed: 3
+  jumpVelocity: 5
 --- !u!1 &176108821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,6 +1581,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 705456531118635552, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466039010018411171, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014989304567925426, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5533631998405882436, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
       propertyPath: m_Name
       value: MKDisplayerButton - (1)
@@ -1644,13 +1677,25 @@ PrefabInstance:
       propertyPath: MediumPunchButtonIcon
       value: 
       objectReference: {fileID: 685530748}
+    - target: {fileID: 5622629612383889889, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5622629612383889894, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
       propertyPath: m_Name
       value: UI Root (3D)
       objectReference: {fileID: 0}
+    - target: {fileID: 5826877942681369738, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: aspectRatio
+      value: 1.75
+      objectReference: {fileID: 0}
     - target: {fileID: 6121932438746745299, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
       propertyPath: m_Name
       value: MPDisplayerButton - (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529692607951349913, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+      propertyPath: aspectRatio
+      value: 8.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
@@ -1746,15 +1791,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIManager: {fileID: 589449942}
+  PlayerOne: {fileID: 148615527}
   roundTimerText: {fileID: 973936209}
-  HealthBarBackgroundplayer1: {fileID: 0}
-  HealthBarForegroundplayer1: {fileID: 0}
-  HealthBarplayer2: {fileID: 0}
-  timeRounded: 5
+  HealthBarBackgroundplayer1: {fileID: 2003771882}
+  HealthBarForegroundplayer1: {fileID: 1635523437}
+  HealthBarplayer2: {fileID: 81464362}
+  timeRounded: 99
   healthComparisonBar: 0.5
   healthPointsPlayer1: 100
   healthPointsPlayer2: 100
   lastTimeUpdate: 0
+  upButtonPressed: 0
+  leftButtonPressed: 0
+  rightButtonPressed: 0
   squareButtonPressed: 0
   crossButtonPressed: 0
   circleButtonPressed: 0
@@ -2659,7 +2708,6 @@ GameObject:
   - component: {fileID: 1083382376}
   - component: {fileID: 1083382375}
   - component: {fileID: 1083382374}
-  - component: {fileID: 1083382378}
   - component: {fileID: 1083382379}
   m_Layer: 0
   m_Name: Player  - Clone
@@ -2796,22 +2844,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083382372}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1083382378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083382372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cabc8b84448644ce8d214c318415970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthbarBackground: {fileID: 0}
-  healthbarForeground: {fileID: 0}
-  maximumHealthValue: 150
-  currentMaxHealthValue: 0
 --- !u!54 &1083382379
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3251,6 +3283,11 @@ Transform:
   m_Father: {fileID: 2121800285}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1635523437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 705456531118635552, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1701164703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3785,6 +3822,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979050613}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2003771882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8987867633781081779, guid: 91b5a4c2fa30d49bbb7df7c306c5ee01, type: 3}
+  m_PrefabInstance: {fileID: 685530741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2121800284
 GameObject:
   m_ObjectHideFlags: 0

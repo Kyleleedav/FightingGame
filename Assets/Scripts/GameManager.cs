@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     //public bool wasPressedThisFrame
     public GameObject UIManager;
+    public GameObject PlayerOne;
     public GameObject roundTimerText;
     public GameObject HealthBarBackgroundplayer1;
     public GameObject HealthBarForegroundplayer1;
@@ -23,7 +24,9 @@ public class GameManager : MonoBehaviour
 
     //Unity controller plugin.
     private PlayerControls controls;
-
+    public bool upButtonPressed;
+    public bool leftButtonPressed;
+    public bool rightButtonPressed;
     public bool squareButtonPressed;
     public bool crossButtonPressed;
     public bool circleButtonPressed;
@@ -47,28 +50,37 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //Player button inputs
-        squareButtonPressed = Keyboard.current.qKey.wasPressedThisFrame;
+        upButtonPressed = Gamepad.current.dpad.up.wasPressedThisFrame;
+        PlayerOne.GetComponent<PlayerMovement>().Jump();
+
+        leftButtonPressed = Gamepad.current.dpad.left.wasPressedThisFrame;
+        PlayerOne.GetComponent<PlayerMovement>().MoveLeft();
+
+        rightButtonPressed = Gamepad.current.dpad.right.wasPressedThisFrame;
+        PlayerOne.GetComponent<PlayerMovement>().MoveRight();
+
+        squareButtonPressed = Gamepad.current.squareButton.wasPressedThisFrame;
         UIManager.GetComponent<UIManager>().CheckLightPunchButtonPressed();
 
-        crossButtonPressed = Keyboard.current.aKey.wasPressedThisFrame;
+        crossButtonPressed = Gamepad.current.crossButton.wasPressedThisFrame;
         UIManager.GetComponent<UIManager>().CheckLightKickButtonPressed();
 
-        triangleButtonPressed = Keyboard.current.wKey.wasPressedThisFrame;
+        triangleButtonPressed = Gamepad.current.triangleButton.wasPressedThisFrame;
         UIManager.GetComponent<UIManager>().CheckMediumPunchButtonPressed();
 
-        circleButtonPressed = Keyboard.current.sKey.wasPressedThisFrame;
+        circleButtonPressed = Gamepad.current.circleButton.wasPressedThisFrame;
         UIManager.GetComponent<UIManager>().CheckMediumKickButtonPressed();
 
-        rightShoulderButtonPressed = Keyboard.current.eKey.wasPressedThisFrame;
+        rightShoulderButtonPressed = Gamepad.current.rightShoulder.wasPressedThisFrame;
         UIManager.GetComponent<UIManager>().CheckHeavyPunchButtonPressed();
 
-        rightTriggerButtonPressed = Keyboard.current.dKey.wasPressedThisFrame;
+        rightTriggerButtonPressed = Gamepad.current.rightTrigger.wasPressedThisFrame;
         UIManager.GetComponent<UIManager>().CheckHeavyKickButtonPressed();
 
-        leftShoulderButtonPressed = Keyboard.current.rKey.wasPressedThisFrame;
+        leftShoulderButtonPressed = Gamepad.current.leftShoulder.wasPressedThisFrame;
         UIManager.GetComponent<UIManager>().CheckTagButtonOnePressed();
 
-        leftTriggerButtonPressed = Keyboard.current.fKey.wasPressedThisFrame;
+        leftTriggerButtonPressed = Gamepad.current.leftTrigger.wasPressedThisFrame;
         UIManager.GetComponent<UIManager>().CheckTagButtonTwoPressed();
         //
 

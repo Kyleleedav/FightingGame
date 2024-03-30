@@ -73,6 +73,7 @@ public class UIManager : MonoBehaviour
         if (gameManager.GetComponent<GameManager>().squareButtonPressed == true)
         {
             LightPunchButtonIcon.SetActive(true);
+            Debug.Log("Lightpunch");
         }
         else
         {
